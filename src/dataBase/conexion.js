@@ -1,14 +1,16 @@
 const { Pool } = require('pg')
-require('dotenv').config()
+    //require('dotenv').config()
 
 const credentials = {
-    host: process.env.HOST,
-    user: process.env.USER,
-    port: process.env.PORT,
-    database: process.env.DATABASE,
-    password: process.env.PASSWORD,
-    allowExitOnIddle: true
+    host: 'postgresql-guslopezr.alwaysdata.net',
+    user: 'guslopezr',
+    password: 'Gus@0920',
+    database: 'guslopezr_joyas',
+    port: '5432',
+    allowExitOnIdle: true
 }
+
+
 
 const pool = new Pool(credentials)
 
